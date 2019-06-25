@@ -131,14 +131,15 @@ div.timeline-event-label:after {
 
 
 <div data-ex-role="exhibit-lens">
-	<span data-ex-content=".title"></span><br/><span data-ex-content=".description"></span>
-	<br/><span data-ex-content=".type"></span> 
-	<a data-ex-href-content=".link" target="_blank"><span data-ex-content=".link"/></a> 
+	<span data-ex-content=".Title"></span><br/><span data-ex-content=".Description"></span>
+	<br/><span data-ex-content=".Type"></span> 
+	<a data-ex-href-content=".ReferringURL" target="_blank"><span data-ex-content=".ReferringURL"/></a> 
 </div>
     <div id="options-wrapper">
       <div id="options">
-	<div class="mode" data-ex-role="facet" data-ex-expression=".subject" data-ex-show-missing="true" data-ex-height="150px"></div>
-	<div class="mode" data-ex-role="facet" data-ex-expression=".type" data-ex-show-missing="true" data-ex-height="150px"></div>	
+	<div class="mode" data-ex-role="facet" data-ex-expression=".Subject" data-ex-show-missing="true" data-ex-height="150px"></div>
+	<div class="mode" data-ex-role="facet" data-ex-expression=".Type" data-ex-show-missing="true" data-ex-height="150px"></div>	
+	<div class="mode" data-ex-role="facet" data-ex-expression=".Audience" data-ex-show-missing="true" data-ex-height="150px"></div>	
       </div>
     </div>
 
@@ -148,11 +149,11 @@ div.timeline-event-label:after {
 	<p class="topics">Text Search:</p>
 	<div data-ex-role="exhibit-facet" data-ex-facet-label="Search" data-ex-facet-class="TextSearch"></div>
 	<p class="topics">Topics Cloud:</p>
-	<div data-ex-role="exhibit-facet" data-ex-label="Cloud" data-ex-expression=".keywords" data-ex-facet-class="Cloud" data-ex-show-missing="false"></div>
+	<div data-ex-role="exhibit-facet" data-ex-label="Cloud" data-ex-expression=".Keywords-csv" data-ex-facet-class="Cloud" data-ex-show-missing="false"></div>
       </div>
       <div id="maps">
       	<div data-ex-role="exhibit-viewPanel">
-      		<div data-ex-role="exhibit-view" data-ex-label="List" data-ex-paginate="true" data-ex-orders=".type" data-ex-possible-orders=".subject,.type,.date"></div>
+      		<div data-ex-role="exhibit-view" data-ex-label="List" data-ex-paginate="true" data-ex-orders=".Type" data-ex-possible-orders=".Subject,.Type,.DateOfResource"></div>
       	</div>
       </div>
     </div>
